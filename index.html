@@ -397,7 +397,8 @@
 
       world.polygonsData(t.features);
       world.arcsData(arcsData);
-      world.pointOfView({ lat: 20.5937, lng: 78.9629, altitude: 2.5}, 2000 );
+      
+      
 
 
       world.polygonLabel(({ properties: d }) => {
@@ -433,7 +434,7 @@
         document.getElementById("info").style.display = 'block';
         document.getElementById("type-b").style.display = 'block';
         document.getElementById("type-a").style.display = 'none';
-        world.pointOfView({ lat: 56.1304, lng: -106.3468, altitude: 2.5}, 2000 );
+        highlight('Sydney')
       }
     }
 
